@@ -1,91 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth" >
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>All Stars Engineering Solutions</title>
 <script src="https://cdn.tailwindcss.com"></script>
+<style>
+/* Smooth fade-in animation for sections */
+.fade-in {
+opacity: 0;
+transform: translateY(20px);
+animation: fadeInUp 0.8s forwards;
+}
+.fade-in.delay-100 { animation-delay: 0.1s; }
+.fade-in.delay-200 { animation-delay: 0.2s; }
+.fade-in.delay-300 { animation-delay: 0.3s; }
+.fade-in.delay-400 { animation-delay: 0.4s; }
+@keyframes fadeInUp {
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+</style>
 </head>
-<body class="font-sans antialiased text-gray-800">
+<body class="font-sans bg-gray-50 text-gray-900 antialiased">
 
-<!-- Hero Section -->
-<header class="relative h-screen bg-cover bg-center" style="background-image:url('allstars-hero.jpg');">
-<div class="absolute inset-0 bg-black bg-opacity-50"></div>
-<nav class="relative z-10 flex justify-between items-center p-8">
-<img src="allstars.png" alt="Logo" class="h-12">
-<ul class="space-x-8 hidden md:flex">
-<li><a href="#about" class="text-white hover:text-gray-300">About</a></li>
-<li><a href="#services" class="text-white hover:text-gray-300">Services</a></li>
-<li><a href="#team" class="text-white hover:text-gray-300">Team</a></li>
-<li><a href="#contact" class="text-white hover:text-gray-300">Contact</a></li>
+<!-- Navbar -->
+<header class="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-sm shadow-md z-50">
+<div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+<a href="#" aria-label="All Stars Engineering Solutions Logo">
+<img src="allstars.png" alt="All Stars Logo" class="h-12 w-auto object-contain" />
+</a>
+<nav>
+<ul class="hidden md:flex space-x-10 text-gray-700 font-medium tracking-wide">
+<li><a href="#about" class="hover:text-green-600 transition">About</a></li>
+<li><a href="#services" class="hover:text-green-600 transition">Services</a></li>
+<li><a href="#team" class="hover:text-green-600 transition">Team</a></li>
+<li><a href="#contact" class="hover:text-green-600 transition">Contact</a></li>
 </ul>
 </nav>
-<div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
-<h1 class="text-4xl md:text-6xl text-white font-bold">Engineering Excellence<br />Across Kurdistan & Iraq</h1>
-<p class="mt-4 text-lg md:text-2xl text-gray-200 max-w-2xl">
-Delivering safe, reliable, and sustainable solutions across energy, construction, and more.
-</p>
-<a href="#services" class="mt-8 px-6 py-3 bg-green-600 text-white font-semibold rounded hover:bg-green-700">
-Explore Our Services
-</a>
 </div>
 </header>
 
+<!-- Hero Section -->
+<section
+class="relative h-screen flex items-center justify-center bg-cover bg-center"
+style="background-image: url('allstars-hero.jpg');"
+aria-label="Hero section with company tagline"
+>
+<div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/80"></div>
+<div class="relative max-w-4xl text-center px-6">
+<h1 class="text-white font-extrabold text-4xl sm:text-5xl md:text-6xl leading-tight drop-shadow-lg">
+Engineering Excellence<br />
+Across Kurdistan & Iraq
+</h1>
+<p class="mt-6 max-w-3xl mx-auto text-gray-200 text-lg sm:text-xl">
+Delivering safe, reliable, and sustainable solutions across energy, construction, and more.
+</p>
+<a
+href="#services"
+class="inline-block mt-10 px-8 py-3 rounded-full bg-green-600 text-white text-lg font-semibold hover:bg-green-700 focus:outline-none focus:ring-4 focus:ring-green-500/50 transition"
+>
+Explore Our Services
+</a>
+</div>
+</section>
+
 <!-- Stats Section -->
-<section class="py-16 bg-white text-center">
-<div class="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8">
-<div>
-<h2 class="text-4xl font-bold text-green-600">10+</h2>
-<p class="mt-2 text-gray-600">Years Experience</p>
+<section class="py-20 bg-white">
+<div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-12 text-center">
+<div class="fade-in delay-100">
+<h2 class="text-5xl font-extrabold text-green-600">10+</h2>
+<p class="mt-2 text-lg font-medium text-gray-700">Years Experience</p>
 </div>
-<div>
-<h2 class="text-4xl font-bold text-green-600">50+</h2>
-<p class="mt-2 text-gray-600">Projects Completed</p>
+<div class="fade-in delay-200">
+<h2 class="text-5xl font-extrabold text-green-600">50+</h2>
+<p class="mt-2 text-lg font-medium text-gray-700">Projects Completed</p>
 </div>
-<div>
-<h2 class="text-4xl font-bold text-green-600">20+</h2>
-<p class="mt-2 text-gray-600">Industries Served</p>
+<div class="fade-in delay-300">
+<h2 class="text-5xl font-extrabold text-green-600">20+</h2>
+<p class="mt-2 text-lg font-medium text-gray-700">Industries Served</p>
 </div>
 </div>
 </section>
 
 <!-- About Section -->
-<section id="about" class="py-20 bg-gray-50">
-<div class="max-w-4xl mx-auto px-4 text-center">
-<h2 class="text-3xl font-bold text-gray-800">Who We Are</h2>
-<p class="mt-4 text-gray-600">
+<section id="about" class="py-24 bg-gray-50">
+<div class="max-w-4xl mx-auto px-6 text-center fade-in delay-100">
+<h2 class="text-4xl font-bold text-gray-900">Who We Are</h2>
+<p class="mt-6 text-lg text-gray-700 leading-relaxed">
 All Stars was founded to positively impact the region’s engineering culture through exceptional talent and large‑scale project delivery.
 </p>
-<p class="mt-2 text-gray-600">
+<p class="mt-4 text-lg text-gray-700 leading-relaxed">
 Registered with JCCS, NCAGE, and Dun & Bradstreet—enabling international and governmental collaboration.
 </p>
 </div>
 </section>
 
 <!-- Services Section -->
-<section id="services" class="py-20 bg-white">
-<div class="max-w-6xl mx-auto px-4">
-<h2 class="text-3xl font-bold text-center mb-10">Our Services</h2>
-<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-<div class="p-6 border rounded-lg hover:shadow-lg transition">
-<h3 class="font-semibold mb-3">Construction & Projects</h3>
-<ul class="list-disc ml-5 text-gray-600 space-y-1">
+<section id="services" class="py-24 bg-white">
+<div class="max-w-7xl mx-auto px-6">
+<h2 class="text-4xl font-bold text-center mb-16 fade-in delay-200">Our Services</h2>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+<div class="fade-in delay-300 p-8 border border-gray-200 rounded-xl shadow-sm hover:shadow-lg transition-transform transform hover:-translate-y-1">
+<h3 class="font-semibold text-xl mb-4 text-gray-900">Construction & Projects</h3>
+<ul class="list-disc list-inside text-gray-600 space-y-2">
 <li>Site Evaluations</li>
 <li>Design-Build</li>
 <li>Project Management</li>
 </ul>
 </div>
-<div class="p-6 border rounded-lg hover:shadow-lg transition">
-<h3 class="font-semibold mb-3">Oil & Energy Services</h3>
-<ul class="list-disc ml-5 text-gray-600 space-y-1">
+<div class="fade-in delay-400 p-8 border border-gray-200 rounded-xl shadow-sm hover:shadow-lg transition-transform transform hover:-translate-y-1">
+<h3 class="font-semibold text-xl mb-4 text-gray-900">Oil & Energy Services</h3>
+<ul class="list-disc list-inside text-gray-600 space-y-2">
 <li>Field Equipment Supply</li>
 <li>Oilfield Operations</li>
 <li>Energy Solutions</li>
 </ul>
 </div>
-<div class="p-6 border rounded-lg hover:shadow-lg transition">
-<h3 class="font-semibold mb-3">Logistics & Support</h3>
-<ul class="list-disc ml-5 text-gray-600 space-y-1">
+<div class="fade-in delay-500 p-8 border border-gray-200 rounded-xl shadow-sm hover:shadow-lg transition-transform transform hover:-translate-y-1">
+<h3 class="font-semibold text-xl mb-4 text-gray-900">Logistics & Support</h3>
+<ul class="list-disc list-inside text-gray-600 space-y-2">
 <li>Customs & Transport</li>
 <li>Warehousing</li>
 <li>Supply Chain</li>
@@ -96,37 +132,60 @@ Registered with JCCS, NCAGE, and Dun & Bradstreet—enabling international a
 </section>
 
 <!-- Team Section -->
-<section id="team" class="py-20 bg-gray-50">
-<div class="max-w-4xl mx-auto px-4 text-center">
-<h2 class="text-3xl font-bold mb-10">Executive Team</h2>
-<div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
-<div><p><strong>Mousa Ismael</strong><br />CEO</p></div>
-<div><p><strong>Agireen Mousa</strong><br />General Manager</p></div>
-<div><p><strong>Darya Yousif</strong><br />Contracts Manager</p></div>
-<div><p><strong>Mohammed Mousa</strong><br />Logistics</p></div>
-<div><p><strong>Warzheen Akram</strong><br />Finance</p></div>
-<div><p><strong>Roya Yousif</strong><br />Production Manager</p></div>
+<section id="team" class="py-24 bg-gray-50">
+<div class="max-w-5xl mx-auto px-6 text-center">
+<h2 class="text-4xl font-bold mb-14 fade-in delay-100">Executive Team</h2>
+<div class="grid sm:grid-cols-2 md:grid-cols-3 gap-12">
+<div class="fade-in delay-200 p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
+<h3 class="text-lg font-semibold mb-1 text-gray-900">Mousa Ismael</h3>
+<p class="text-green-600 font-medium">CEO</p>
+</div>
+<div class="fade-in delay-300 p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
+<h3 class="text-lg font-semibold mb-1 text-gray-900">Agireen Mousa</h3>
+<p class="text-green-600 font-medium">General Manager</p>
+</div>
+<div class="fade-in delay-400 p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
+<h3 class="text-lg font-semibold mb-1 text-gray-900">Darya Yousif</h3>
+<p class="text-green-600 font-medium">Contracts Manager</p>
+</div>
+<div class="fade-in delay-500 p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
+<h3 class="text-lg font-semibold mb-1 text-gray-900">Mohammed Mousa</h3>
+<p class="text-green-600 font-medium">Logistics</p>
+</div>
+<div class="fade-in delay-600 p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
+<h3 class="text-lg font-semibold mb-1 text-gray-900">Warzheen Akram</h3>
+<p class="text-green-600 font-medium">Finance</p>
+</div>
+<div class="fade-in delay-700 p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
+<h3 class="text-lg font-semibold mb-1 text-gray-900">Roya Yousif</h3>
+<p class="text-green-600 font-medium">Production Manager</p>
+</div>
 </div>
 </div>
 </section>
 
 <!-- Contact Section -->
-<section id="contact" class="py-16 bg-white">
-<div class="max-w-4xl mx-auto px-4 text-center">
-<h2 class="text-3xl font-bold mb-6">Get in Touch</h2>
-<p class="mb-6 text-gray-600">
-Duhok (Barzan St.) & Erbil (Ganjan City) — +964 750 826 0412 | allstarscompany2012@gmail.com
+<section id="contact" class="py-20 bg-white">
+<div class="max-w-4xl mx-auto px-6 text-center fade-in delay-300">
+<h2 class="text-4xl font-bold mb-8">Get in Touch</h2>
+<p class="text-lg text-gray-700 max-w-xl mx-auto mb-8 leading-relaxed">
+Visit us at Duhok (Barzan St.) & Erbil (Ganjan City) <br />
+Phone: <a href="tel:+9647508260412" class="text-green-600 hover:underline">+964 750 826 0412</a><br />
+Email: <a href="mailto:allstarscompany2012@gmail.com" class="text-green-600 hover:underline">allstarscompany2012@gmail.com</a>
 </p>
-<a href="mailto:allstarscompany2012@gmail.com" class="px-6 py-3 bg-green-600 text-white font-semibold rounded hover:bg-green-700">
+<a
+href="mailto:allstarscompany2012@gmail.com"
+class="inline-block px-8 py-3 bg-green-600 text-white font-semibold rounded-full hover:bg-green-700 focus:outline-none focus:ring-4 focus:ring-green-500/50 transition"
+>
 Email Us
 </a>
 </div>
 </section>
 
 <!-- Footer -->
-<footer class="bg-black text-white py-8 text-center">
-<img src="allstars.png" alt="All Stars Logo" class="h-10 mx-auto mb-4">
-<p>© 2025 All Stars Company • allstarscompany2012@gmail.com</p>
+<footer class="bg-gray-900 text-gray-300 py-10 text-center">
+<img src="allstars.png" alt="All Stars Logo" class="h-10 mx-auto mb-4 opacity-80" />
+<p class="text-sm select-none">© 2025 All Stars Company • allstarscompany2012@gmail.com</p>
 </footer>
 
 </body>
