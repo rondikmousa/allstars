@@ -3,151 +3,130 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>All Stars Company</title>
+<title>All Stars Engineering Solutions</title>
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-50 text-gray-900">
+<body class="font-sans antialiased text-gray-800">
 
-<header class="bg-black text-white p-6">
-<div class="flex items-center justify-center space-x-4">
-<img src="allstars.png" alt="All Stars Logo" class="h-12 w-auto">
-<h1 class="text-3xl font-bold">KRG IRAQ ENGINEERING SOLUTIONS</h1>
+<!-- Hero Section -->
+<header class="relative h-screen bg-cover bg-center" style="background-image:url('allstars-hero.jpg');">
+<div class="absolute inset-0 bg-black bg-opacity-50"></div>
+<nav class="relative z-10 flex justify-between items-center p-8">
+<img src="allstars.png" alt="Logo" class="h-12">
+<ul class="space-x-8 hidden md:flex">
+<li><a href="#about" class="text-white hover:text-gray-300">About</a></li>
+<li><a href="#services" class="text-white hover:text-gray-300">Services</a></li>
+<li><a href="#team" class="text-white hover:text-gray-300">Team</a></li>
+<li><a href="#contact" class="text-white hover:text-gray-300">Contact</a></li>
+</ul>
+</nav>
+<div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
+<h1 class="text-4xl md:text-6xl text-white font-bold">Engineering Excellence<br />Across Kurdistan & Iraq</h1>
+<p class="mt-4 text-lg md:text-2xl text-gray-200 max-w-2xl">
+Delivering safe, reliable, and sustainable solutions across energy, construction, and more.
+</p>
+<a href="#services" class="mt-8 px-6 py-3 bg-green-600 text-white font-semibold rounded hover:bg-green-700">
+Explore Our Services
+</a>
 </div>
 </header>
 
-<section class="py-10 text-center">
-<h2 class="text-xl font-semibold uppercase tracking-widest text-gray-700">Sectors</h2>
-<p class="mt-4 text-gray-600 max-w-4xl mx-auto">
-DESIGN & CONSTRUCTION | ENERGY | FOOD & BEVERAGE | MEDIA | TECHNOLOGY & DIGITAL | WATER | SPORT | MANUFACTURING | FINANCIAL SERVICES | HEALTH | TOURISM
-</p>
-</section>
-
-<section class="bg-white py-12 px-6 md:px-20">
-<h2 class="text-2xl font-bold mb-4">About All Star</h2>
-<p class="mb-4">ALLSTAR was founded to deliver solutions that positively impacted the business culture in Iraq & KRG. The team at ALLSTAR comprises excellent experts involved in large-scale projects worldwide.</p>
-
-<h3 class="text-xl font-semibold mt-6">Our Team</h3>
-<p class="mb-4">Join world-leading talents and a visionary community aiming to make ideas come true.</p>
-
-<h3 class="text-xl font-semibold mt-6">Our Partner</h3>
-<p class="mb-4">All partners work toward progressive goals, based on core principles for lasting impact.</p>
-
-<h3 class="text-xl font-semibold mt-6">Our Vision</h3>
-<p class="mb-4">Offer unique journeys to our partners, employees, and communities through meaningful experiences.</p>
-
-<h3 class="text-xl font-semibold mt-6">Our Purpose</h3>
-<p class="mb-4">We aim to make a legacy that improves the world.</p>
-</section>
-
-<section class="bg-gray-100 py-12 px-6 md:px-20">
-<h2 class="text-2xl font-bold mb-6">What We Do</h2>
-<p class="mb-4">We deliver high-quality services across the Kurdistan Region and Iraq with a strong sense of client identification and teamwork.</p>
-
-<h3 class="text-xl font-semibold mt-6">Why Choose Us</h3>
-<ul class="list-disc ml-6 space-y-2 mt-2">
-<li>Client-focused</li>
-<li>Reputation built on skilled teams</li>
-<li>Reliable, quality work</li>
-<li>People-first hiring</li>
-<li>Team-driven success</li>
-<li>Flexible and responsive size</li>
-<li>Innovation & adaptability</li>
-<li>Confidentiality & integrity</li>
-</ul>
-</section>
-
-<section class="bg-white py-12 px-6 md:px-20">
-<h2 class="text-2xl font-bold mb-6">Executive Team</h2>
-<div class="grid md:grid-cols-2 gap-4">
-<p><strong>Mousa Ismael</strong> – CEO</p>
-<p><strong>Agireen Mousa</strong> – Manager</p>
-<p><strong>Darya Yousif</strong> – Contracts Manager</p>
-<p><strong>Mohammed Mousa</strong> – Logistics</p>
-<p><strong>Warzheen Akram</strong> – Finance</p>
-<p><strong>Roya Yousif</strong> – Production Manager</p>
+<!-- Stats Section -->
+<section class="py-16 bg-white text-center">
+<div class="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8">
+<div>
+<h2 class="text-4xl font-bold text-green-600">10+</h2>
+<p class="mt-2 text-gray-600">Years Experience</p>
+</div>
+<div>
+<h2 class="text-4xl font-bold text-green-600">50+</h2>
+<p class="mt-2 text-gray-600">Projects Completed</p>
+</div>
+<div>
+<h2 class="text-4xl font-bold text-green-600">20+</h2>
+<p class="mt-2 text-gray-600">Industries Served</p>
+</div>
 </div>
 </section>
 
-<section class="bg-gray-100 py-12 px-6 md:px-20">
-<h2 class="text-2xl font-bold mb-6">Services</h2>
-<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-sm">
-<div>
-<h3 class="font-semibold mb-2">Constructions</h3>
-<ul class="list-disc ml-5 space-y-1">
-<li>Site Evaluation</li>
+<!-- About Section -->
+<section id="about" class="py-20 bg-gray-50">
+<div class="max-w-4xl mx-auto px-4 text-center">
+<h2 class="text-3xl font-bold text-gray-800">Who We Are</h2>
+<p class="mt-4 text-gray-600">
+All Stars was founded to positively impact the region’s engineering culture through exceptional talent and large‑scale project delivery.
+</p>
+<p class="mt-2 text-gray-600">
+Registered with JCCS, NCAGE, and Dun & Bradstreet—enabling international and governmental collaboration.
+</p>
+</div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="py-20 bg-white">
+<div class="max-w-6xl mx-auto px-4">
+<h2 class="text-3xl font-bold text-center mb-10">Our Services</h2>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="p-6 border rounded-lg hover:shadow-lg transition">
+<h3 class="font-semibold mb-3">Construction & Projects</h3>
+<ul class="list-disc ml-5 text-gray-600 space-y-1">
+<li>Site Evaluations</li>
 <li>Design-Build</li>
 <li>Project Management</li>
 </ul>
 </div>
-<div>
-<h3 class="font-semibold mb-2">Commercial</h3>
-<ul class="list-disc ml-5 space-y-1">
-<li>Legal & Insurance Services</li>
-<li>Utilities</li>
+<div class="p-6 border rounded-lg hover:shadow-lg transition">
+<h3 class="font-semibold mb-3">Oil & Energy Services</h3>
+<ul class="list-disc ml-5 text-gray-600 space-y-1">
+<li>Field Equipment Supply</li>
+<li>Oilfield Operations</li>
+<li>Energy Solutions</li>
 </ul>
 </div>
-<div>
-<h3 class="font-semibold mb-2">Medical</h3>
-<ul class="list-disc ml-5 space-y-1">
-<li>Emergency Supplies</li>
-<li>Diagnostics & Monitoring</li>
+<div class="p-6 border rounded-lg hover:shadow-lg transition">
+<h3 class="font-semibold mb-3">Logistics & Support</h3>
+<ul class="list-disc ml-5 text-gray-600 space-y-1">
+<li>Customs & Transport</li>
+<li>Warehousing</li>
+<li>Supply Chain</li>
 </ul>
 </div>
-<!-- Add more categories similarly... -->
-</div>
-</section>
-
-<section class="bg-white py-12 px-6 md:px-20">
-<h2 class="text-2xl font-bold mb-4">Business Principles</h2>
-<ul class="list-decimal ml-6 space-y-2 text-sm">
-<li>Client interests come first</li>
-<li>Integrity and team strength</li>
-<li>Excellence in delivery</li>
-<li>Right person for each role</li>
-<li>Collaboration is key</li>
-<li>Flexible and responsive size</li>
-<li>Adapting to change</li>
-<li>Protecting confidentiality</li>
-<li>Always honest and ethical</li>
-</ul>
-</section>
-
-<section class="bg-gray-100 py-12 px-6 md:px-20">
-<h2 class="text-2xl font-bold mb-4">Ethical Principles</h2>
-<ul class="list-decimal ml-6 space-y-2 text-sm">
-<li>Confidentiality</li>
-<li>Ethical Conduct</li>
-<li>Duty of Care</li>
-<li>Transparency in Contracts</li>
-<li>Fair Fees</li>
-<li>Honest Payment</li>
-<li>Respect for Intellectual Property</li>
-</ul>
-</section>
-
-<section class="bg-white py-12 px-6 md:px-20">
-<h2 class="text-2xl font-bold mb-4">Our Locations</h2>
-<div class="grid md:grid-cols-2 gap-6 text-sm">
-<div>
-<h3 class="font-semibold">Duhok, KRG, Iraq</h3>
-<p>Barzan Street</p>
-<p>Phone: +964 750 826 0412</p>
-<p>Email: allstarscompany2012@gmail.com</p>
-</div>
-<div>
-<h3 class="font-semibold">Erbil, KRG, Iraq</h3>
-<p>Ganjan City</p>
-<p>Phone: +964 750 826 0412</p>
-<p>Email: allstarscompany2012@gmail.com</p>
 </div>
 </div>
 </section>
 
-<footer class="bg-black text-white py-6 text-center text-sm">
-<div class="flex flex-col items-center space-y-2">
-<img src="allstars.png" alt="All Stars Logo" class="h-10 w-auto">
-<p>© 2025 All Stars Company – allstarscompany2012@gmail.com</p>
+<!-- Team Section -->
+<section id="team" class="py-20 bg-gray-50">
+<div class="max-w-4xl mx-auto px-4 text-center">
+<h2 class="text-3xl font-bold mb-10">Executive Team</h2>
+<div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+<div><p><strong>Mousa Ismael</strong><br />CEO</p></div>
+<div><p><strong>Agireen Mousa</strong><br />General Manager</p></div>
+<div><p><strong>Darya Yousif</strong><br />Contracts Manager</p></div>
+<div><p><strong>Mohammed Mousa</strong><br />Logistics</p></div>
+<div><p><strong>Warzheen Akram</strong><br />Finance</p></div>
+<div><p><strong>Roya Yousif</strong><br />Production Manager</p></div>
 </div>
+</div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-16 bg-white">
+<div class="max-w-4xl mx-auto px-4 text-center">
+<h2 class="text-3xl font-bold mb-6">Get in Touch</h2>
+<p class="mb-6 text-gray-600">
+Duhok (Barzan St.) & Erbil (Ganjan City) — +964 750 826 0412 | allstarscompany2012@gmail.com
+</p>
+<a href="mailto:allstarscompany2012@gmail.com" class="px-6 py-3 bg-green-600 text-white font-semibold rounded hover:bg-green-700">
+Email Us
+</a>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-black text-white py-8 text-center">
+<img src="allstars.png" alt="All Stars Logo" class="h-10 mx-auto mb-4">
+<p>© 2025 All Stars Company • allstarscompany2012@gmail.com</p>
 </footer>
 
 </body>
