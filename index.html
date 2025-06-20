@@ -1,191 +1,181 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth" >
+<html lang="en" class="scroll-smooth">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>All Stars Engineering Solutions</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>All Stars Company | KRG Iraq</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <style>
-/* Smooth fade-in animation for sections */
-.fade-in {
-opacity: 0;
-transform: translateY(20px);
-animation: fadeInUp 0.8s forwards;
-}
-.fade-in.delay-100 { animation-delay: 0.1s; }
-.fade-in.delay-200 { animation-delay: 0.2s; }
-.fade-in.delay-300 { animation-delay: 0.3s; }
-.fade-in.delay-400 { animation-delay: 0.4s; }
-@keyframes fadeInUp {
-to {
-opacity: 1;
-transform: translateY(0);
-}
-}
+html { scroll-behavior: smooth; }
 </style>
 </head>
-<body class="font-sans bg-gray-50 text-gray-900 antialiased">
+<body class="bg-white text-gray-900 font-sans">
 
-<!-- Navbar -->
-<header class="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-sm shadow-md z-50">
-<div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
-<a href="#" aria-label="All Stars Engineering Solutions Logo">
-<img src="allstars.png" alt="All Stars Logo" class="h-12 w-auto object-contain" />
-</a>
-<nav>
-<ul class="hidden md:flex space-x-10 text-gray-700 font-medium tracking-wide">
-<li><a href="#about" class="hover:text-green-600 transition">About</a></li>
-<li><a href="#services" class="hover:text-green-600 transition">Services</a></li>
-<li><a href="#team" class="hover:text-green-600 transition">Team</a></li>
-<li><a href="#contact" class="hover:text-green-600 transition">Contact</a></li>
-</ul>
+<!-- Header -->
+<header class="bg-blue-900 text-white shadow-md">
+<div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-5">
+<div class="flex items-center space-x-4">
+<img src="allstars.png" alt="All Stars Logo" class="h-12 w-auto">
+<h1 class="text-xl md:text-3xl font-bold">All Stars Company</h1>
+</div>
+<nav class="hidden md:flex space-x-6 text-sm font-medium">
+<a href="#about" class="hover:text-blue-300">About</a>
+<a href="#services" class="hover:text-blue-300">Services</a>
+<a href="#team" class="hover:text-blue-300">Team</a>
+<a href="#principles" class="hover:text-blue-300">Principles</a>
+<a href="#locations" class="hover:text-blue-300">Contact</a>
 </nav>
 </div>
 </header>
 
-<!-- Hero Section -->
-<section
-class="relative h-screen flex items-center justify-center bg-cover bg-center"
-style="background-image: url('allstars-hero.jpg');"
-aria-label="Hero section with company tagline"
->
-<div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/80"></div>
-<div class="relative max-w-4xl text-center px-6">
-<h1 class="text-white font-extrabold text-4xl sm:text-5xl md:text-6xl leading-tight drop-shadow-lg">
-Engineering Excellence<br />
-Across Kurdistan & Iraq
-</h1>
-<p class="mt-6 max-w-3xl mx-auto text-gray-200 text-lg sm:text-xl">
-Delivering safe, reliable, and sustainable solutions across energy, construction, and more.
+<!-- Sectors -->
+<section class="py-14 bg-gray-50 text-center px-4">
+<h2 class="text-lg font-semibold uppercase text-blue-900 tracking-wider">Sectors</h2>
+<p class="mt-4 max-w-5xl mx-auto text-gray-700">
+DESIGN & CONSTRUCTION | ENERGY | FOOD & BEVERAGE | MEDIA | TECHNOLOGY & DIGITAL | WATER | SPORT | MANUFACTURING | FINANCIAL SERVICES | HEALTH | TOURISM
 </p>
-<a
-href="#services"
-class="inline-block mt-10 px-8 py-3 rounded-full bg-green-600 text-white text-lg font-semibold hover:bg-green-700 focus:outline-none focus:ring-4 focus:ring-green-500/50 transition"
->
-Explore Our Services
-</a>
+</section>
+
+<!-- About -->
+<section id="about" class="py-20 px-6 md:px-24 bg-white text-gray-800">
+<div class="max-w-5xl mx-auto">
+<h2 class="text-3xl font-bold text-blue-900 mb-6">About All Stars</h2>
+<p class="mb-6 leading-relaxed">All Stars was founded to deliver solutions that positively impact business culture in Iraq & KRG. Our expert team brings global experience in large-scale engineering and infrastructure projects.</p>
+<h3 class="text-xl font-semibold text-blue-800 mt-8">Our Vision</h3>
+<p class="mb-4">To offer unique journeys through meaningful experiences for partners, employees, and communities.</p>
+<h3 class="text-xl font-semibold text-blue-800 mt-6">Our Purpose</h3>
+<p class="mb-4">Creating a legacy that transforms lives, industries, and regions.</p>
+<h3 class="text-xl font-semibold text-blue-800 mt-6">Our Partners</h3>
+<p class="mb-4">Progressive partnerships rooted in long-term impact and aligned core values.</p>
+<h3 class="text-xl font-semibold text-blue-800 mt-6">Join the Team</h3>
+<p class="mb-4">Join world-class talent dedicated to turning visionary ideas into lasting reality.</p>
 </div>
 </section>
 
-<!-- Stats Section -->
-<section class="py-20 bg-white">
-<div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-12 text-center">
-<div class="fade-in delay-100">
-<h2 class="text-5xl font-extrabold text-green-600">10+</h2>
-<p class="mt-2 text-lg font-medium text-gray-700">Years Experience</p>
-</div>
-<div class="fade-in delay-200">
-<h2 class="text-5xl font-extrabold text-green-600">50+</h2>
-<p class="mt-2 text-lg font-medium text-gray-700">Projects Completed</p>
-</div>
-<div class="fade-in delay-300">
-<h2 class="text-5xl font-extrabold text-green-600">20+</h2>
-<p class="mt-2 text-lg font-medium text-gray-700">Industries Served</p>
-</div>
-</div>
-</section>
-
-<!-- About Section -->
-<section id="about" class="py-24 bg-gray-50">
-<div class="max-w-4xl mx-auto px-6 text-center fade-in delay-100">
-<h2 class="text-4xl font-bold text-gray-900">Who We Are</h2>
-<p class="mt-6 text-lg text-gray-700 leading-relaxed">
-All Stars was founded to positively impact the region’s engineering culture through exceptional talent and large‑scale project delivery.
-</p>
-<p class="mt-4 text-lg text-gray-700 leading-relaxed">
-Registered with JCCS, NCAGE, and Dun & Bradstreet—enabling international and governmental collaboration.
-</p>
+<!-- What We Do -->
+<section class="bg-blue-50 py-20 px-6 md:px-24">
+<div class="max-w-6xl mx-auto">
+<h2 class="text-3xl font-bold text-blue-900 mb-6">What We Do</h2>
+<p class="mb-6">Our services span the entire project lifecycle with a client-focused, team-driven approach. We pride ourselves on flexibility, quality, and innovation.</p>
+<h3 class="text-xl font-semibold text-blue-800 mt-6">Why Choose Us</h3>
+<ul class="list-disc list-inside space-y-2 mt-4 text-gray-700">
+<li>Client-centric approach</li>
+<li>Trusted and skilled team</li>
+<li>Quality-focused delivery</li>
+<li>People-first hiring</li>
+<li>Transparent collaboration</li>
+<li>Efficient operational size</li>
+<li>Innovation-driven solutions</li>
+<li>Strong confidentiality & integrity</li>
+</ul>
 </div>
 </section>
 
-<!-- Services Section -->
-<section id="services" class="py-24 bg-white">
-<div class="max-w-7xl mx-auto px-6">
-<h2 class="text-4xl font-bold text-center mb-16 fade-in delay-200">Our Services</h2>
-<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
-<div class="fade-in delay-300 p-8 border border-gray-200 rounded-xl shadow-sm hover:shadow-lg transition-transform transform hover:-translate-y-1">
-<h3 class="font-semibold text-xl mb-4 text-gray-900">Construction & Projects</h3>
-<ul class="list-disc list-inside text-gray-600 space-y-2">
-<li>Site Evaluations</li>
+<!-- Services -->
+<section id="services" class="bg-white py-20 px-6 md:px-24">
+<div class="max-w-6xl mx-auto">
+<h2 class="text-3xl font-bold text-blue-900 mb-12">Services</h2>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 text-sm text-gray-800">
+<div>
+<h3 class="font-semibold text-blue-800 mb-2">Construction</h3>
+<ul class="list-disc list-inside space-y-1">
+<li>Site Evaluation</li>
 <li>Design-Build</li>
 <li>Project Management</li>
 </ul>
 </div>
-<div class="fade-in delay-400 p-8 border border-gray-200 rounded-xl shadow-sm hover:shadow-lg transition-transform transform hover:-translate-y-1">
-<h3 class="font-semibold text-xl mb-4 text-gray-900">Oil & Energy Services</h3>
-<ul class="list-disc list-inside text-gray-600 space-y-2">
-<li>Field Equipment Supply</li>
-<li>Oilfield Operations</li>
-<li>Energy Solutions</li>
+<div>
+<h3 class="font-semibold text-blue-800 mb-2">Commercial</h3>
+<ul class="list-disc list-inside space-y-1">
+<li>Legal & Insurance Services</li>
+<li>Utilities</li>
 </ul>
 </div>
-<div class="fade-in delay-500 p-8 border border-gray-200 rounded-xl shadow-sm hover:shadow-lg transition-transform transform hover:-translate-y-1">
-<h3 class="font-semibold text-xl mb-4 text-gray-900">Logistics & Support</h3>
-<ul class="list-disc list-inside text-gray-600 space-y-2">
-<li>Customs & Transport</li>
-<li>Warehousing</li>
-<li>Supply Chain</li>
+<div>
+<h3 class="font-semibold text-blue-800 mb-2">Medical</h3>
+<ul class="list-disc list-inside space-y-1">
+<li>Emergency Supplies</li>
+<li>Diagnostics & Monitoring</li>
 </ul>
 </div>
 </div>
 </div>
 </section>
 
-<!-- Team Section -->
-<section id="team" class="py-24 bg-gray-50">
-<div class="max-w-5xl mx-auto px-6 text-center">
-<h2 class="text-4xl font-bold mb-14 fade-in delay-100">Executive Team</h2>
-<div class="grid sm:grid-cols-2 md:grid-cols-3 gap-12">
-<div class="fade-in delay-200 p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
-<h3 class="text-lg font-semibold mb-1 text-gray-900">Mousa Ismael</h3>
-<p class="text-green-600 font-medium">CEO</p>
-</div>
-<div class="fade-in delay-300 p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
-<h3 class="text-lg font-semibold mb-1 text-gray-900">Agireen Mousa</h3>
-<p class="text-green-600 font-medium">General Manager</p>
-</div>
-<div class="fade-in delay-400 p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
-<h3 class="text-lg font-semibold mb-1 text-gray-900">Darya Yousif</h3>
-<p class="text-green-600 font-medium">Contracts Manager</p>
-</div>
-<div class="fade-in delay-500 p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
-<h3 class="text-lg font-semibold mb-1 text-gray-900">Mohammed Mousa</h3>
-<p class="text-green-600 font-medium">Logistics</p>
-</div>
-<div class="fade-in delay-600 p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
-<h3 class="text-lg font-semibold mb-1 text-gray-900">Warzheen Akram</h3>
-<p class="text-green-600 font-medium">Finance</p>
-</div>
-<div class="fade-in delay-700 p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
-<h3 class="text-lg font-semibold mb-1 text-gray-900">Roya Yousif</h3>
-<p class="text-green-600 font-medium">Production Manager</p>
-</div>
+<!-- Team -->
+<section id="team" class="bg-blue-50 py-20 px-6 md:px-24">
+<div class="max-w-4xl mx-auto">
+<h2 class="text-3xl font-bold text-blue-900 mb-10">Executive Team</h2>
+<div class="grid sm:grid-cols-2 gap-6">
+<p><strong>Mousa Ismael</strong> – CEO</p>
+<p><strong>Agireen Mousa</strong> – General Manager</p>
+<p><strong>Darya Yousif</strong> – Contracts Manager</p>
+<p><strong>Mohammed Mousa</strong> – Logistics</p>
+<p><strong>Warzheen Akram</strong> – Finance</p>
+<p><strong>Roya Yousif</strong> – Production Manager</p>
 </div>
 </div>
 </section>
 
-<!-- Contact Section -->
-<section id="contact" class="py-20 bg-white">
-<div class="max-w-4xl mx-auto px-6 text-center fade-in delay-300">
-<h2 class="text-4xl font-bold mb-8">Get in Touch</h2>
-<p class="text-lg text-gray-700 max-w-xl mx-auto mb-8 leading-relaxed">
-Visit us at Duhok (Barzan St.) & Erbil (Ganjan City) <br />
-Phone: <a href="tel:+9647508260412" class="text-green-600 hover:underline">+964 750 826 0412</a><br />
-Email: <a href="mailto:allstarscompany2012@gmail.com" class="text-green-600 hover:underline">allstarscompany2012@gmail.com</a>
-</p>
-<a
-href="mailto:allstarscompany2012@gmail.com"
-class="inline-block px-8 py-3 bg-green-600 text-white font-semibold rounded-full hover:bg-green-700 focus:outline-none focus:ring-4 focus:ring-green-500/50 transition"
->
-Email Us
-</a>
+<!-- Principles -->
+<section id="principles" class="bg-white py-20 px-6 md:px-24">
+<div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16">
+<div>
+<h2 class="text-2xl font-bold text-blue-900 mb-4">Business Principles</h2>
+<ul class="list-decimal list-inside space-y-2 text-sm text-gray-700">
+<li>Client interests first</li>
+<li>Integrity & teamwork</li>
+<li>Delivery excellence</li>
+<li>Right people in right roles</li>
+<li>Transparent collaboration</li>
+<li>Flexibility & responsiveness</li>
+<li>Adaptability</li>
+<li>Confidentiality</li>
+<li>Ethics in all dealings</li>
+</ul>
+</div>
+<div>
+<h2 class="text-2xl font-bold text-blue-900 mb-4">Ethical Principles</h2>
+<ul class="list-decimal list-inside space-y-2 text-sm text-gray-700">
+<li>Confidentiality</li>
+<li>Ethical Conduct</li>
+<li>Duty of Care</li>
+<li>Transparency in Contracts</li>
+<li>Fair Fees</li>
+<li>Honest Payment</li>
+<li>Respect for Intellectual Property</li>
+</ul>
+</div>
+</div>
+</section>
+
+<!-- Locations -->
+<section id="locations" class="bg-blue-50 py-20 px-6 md:px-24">
+<div class="max-w-5xl mx-auto">
+<h2 class="text-3xl font-bold text-blue-900 mb-8">Our Locations</h2>
+<div class="grid sm:grid-cols-2 gap-10 text-sm">
+<div>
+<h3 class="text-lg font-semibold text-blue-800 mb-1">Duhok, KRG, Iraq</h3>
+<p>Barzan Street</p>
+<p>Phone: +964 750 826 0412</p>
+<p>Email: <a href="mailto:allstarscompany2012@gmail.com" class="text-blue-600 hover:underline">allstarscompany2012@gmail.com</a></p>
+</div>
+<div>
+<h3 class="text-lg font-semibold text-blue-800 mb-1">Erbil, KRG, Iraq</h3>
+<p>Ganjan City</p>
+<p>Phone: +964 750 826 0412</p>
+<p>Email: <a href="mailto:allstarscompany2012@gmail.com" class="text-blue-600 hover:underline">allstarscompany2012@gmail.com</a></p>
+</div>
+</div>
 </div>
 </section>
 
 <!-- Footer -->
-<footer class="bg-gray-900 text-gray-300 py-10 text-center">
-<img src="allstars.png" alt="All Stars Logo" class="h-10 mx-auto mb-4 opacity-80" />
-<p class="text-sm select-none">© 2025 All Stars Company • allstarscompany2012@gmail.com</p>
+<footer class="bg-blue-900 text-white text-sm py-6 text-center">
+<div class="flex flex-col items-center space-y-2">
+<img src="allstars.png" alt="All Stars Logo" class="h-10 w-auto opacity-80">
+<p>© 2025 All Stars Company – <a href="mailto:allstarscompany2012@gmail.com" class="underline">allstarscompany2012@gmail.com</a></p>
+</div>
 </footer>
 
 </body>
